@@ -1,0 +1,439 @@
+/* common classes starts */
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: sans-serif;
+    
+    text-align: justify;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.btn {
+    background-color: rgb(230, 159, 8);
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+
+  /* common classes ends */
+/* navbar starts here */
+
+.navbar{
+    width: 100%;
+    background-color: rgb(250, 71, 175);
+    justify-content: space-between;
+    height: 10vh;
+}
+.logo_section{
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.logo_section img{
+    border-radius: 50%;
+    border: 5px double white;
+    margin: 10px;
+}
+.menu > li{
+    padding: 10px;
+}
+.menu > li a{
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: 0.2s;
+    font-size: 1.2rem;
+    color: white;
+}
+.menu > li a:hover{
+    background-color: aqua;
+    color: black;
+}
+
+/* navbar ends here */
+
+/* banner starts here */
+
+.blog-banner{
+    width: 100%;
+    height: 90vh;
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,0.5);
+}
+.banner-img{
+    flex: 1;
+    
+    padding: 0 10px;
+}
+
+.banner-text{
+    flex: 1;
+    padding: 30px;
+}
+.banner-text h1{
+    background-color: rgb(250, 71, 175);
+    color: white;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 2.2rem;
+    border-radius: 10px;
+}
+.banner-text p{
+    font-size: 1.2rem;
+}
+.banner-img img{
+    height: 60vh;
+    border: 3px solid rgb(250, 71, 175);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.banner-img img:hover{
+    transform: scale(1.02);
+}
+/* banner ends here */
+
+/* about starts here */
+
+.about{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem;
+    background-color: rgb(250, 71, 175);
+    height: 80vh;
+}
+.about h1{
+    font-size: 3rem;
+    padding: 2rem;
+    font-family: Italianno, cursive;
+    color: white;
+}
+
+.card{
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    background-color: gray;
+    flex: 1;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.read-more{
+    padding: 10px 5px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    text-align: center;
+    margin-top: 1rem;
+    transition: 0.3s;
+    font-weight: bolder;
+    background-color: yellow;
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+.read-more:hover{
+    background-color: aqua;
+}
+
+
+/* about ends here */
+
+/* archive starts here */
+.arch-blog-sec{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,0.5);
+}
+
+.archive{
+    height: 80vh;
+    flex-direction: column;
+}
+.archive-heading{
+    align-items: center;
+    font-size: 3rem;
+    font-family: Italianno, cursive;
+    margin-bottom: 10rem;
+}
+.img-row{
+    display: flex;
+    background-color: rgb(230, 229, 226);
+    text-align: center;
+    border-radius: 10px;
+}
+.archives-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.1rem solid;
+    border-bottom: 0.1rem solid;
+}
+
+.img-row > li{
+    width: 100%;
+    margin: 1rem;
+    height: 100%;
+}
+
+.img-row li img{
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.img-row li img:hover{
+    transform: scale(1.2);
+}
+
+/* archive ends here */
+
+/* blog post starts */
+
+.blog-post{
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+.blog-post-heading{
+    margin: 3rem 0;
+    align-items: center;
+    font-size: 3rem;
+    font-family: Italianno, cursive;
+}
+.blog-post-container{
+    flex-direction: column;
+}
+.blog-card{
+    width: 70%;
+    margin: 10px 0;
+    background-color: rgb(197, 183, 183);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.blog-card:hover{
+    transform: scale(1.05);
+}
+.blog-card .img-sec{
+    flex: 1;
+}
+.img-sec img{
+    border-radius: 10px;
+}
+.blog-body{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.sub-head{
+    margin: 10px 0;
+}
+
+.learn-more{
+    padding: 10px 5px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    text-align: center;
+    margin-top: 1rem;
+    transition: 0.3s;
+    font-weight: bolder;
+    background-color: yellow;
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+.learn-more:hover{
+    background-color: aqua;
+}
+/* blog post ends */
+
+/* contact starts here */
+
+.contact-me{
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgb(250, 71, 175);
+}
+.contact-head{
+    margin: 3rem 0;
+    align-items: center;
+    font-size: 3rem;
+    font-family: Italianno, cursive;
+    color: white;
+}
+#contact-form {
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    margin: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-control label {
+    font-size: 1.6rem;
+    flex: 0.3;
+  }
+  input,
+  textarea {
+    flex: 0.7;
+    width: auto;
+    font-size: 1.6rem;
+    padding:  1rem;
+    border: none;
+    border-radius: 0.6rem;
+  }
+  textarea {
+    resize: none;
+    height: 12vh;
+  }
+  .form-btn-field {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-btn {
+    width: 30%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .contact-btn:hover{
+    background-color: aqua;
+}
+/* contact ends here */
+
+/* main ends here */
+
+/* footer starts here  */
+footer {
+    background-color: black;
+    padding: 1rem;
+  
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright-text {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .footer-icon {
+    font-size: 2.5rem;
+  }
+  #menubar2 > li{
+    padding: 10px;
+  }
+  /* footer ends here  */
+
+/* scren size responsive starts */
+
+@media (max-width: 992px){
+
+    .blog-banner{
+        flex-direction: column;
+        height: 80vh;
+    }
+    .banner-img img{
+        height: 45vh;
+        width: 50vh;
+        margin-bottom: 2rem;
+    }
+    .banner-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .banner-text p{
+        font-size: 0.9rem;
+    }
+    .navbar{
+        flex-direction: column;
+        height: auto;
+    }
+    .menu_section .menu{
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about{
+        height: auto;
+    }
+    .card-section{
+        flex-direction: column;
+    }
+    .card-section .card{
+        width: 70%;
+    }
+    
+} 
+  @media (max-width: 768px) {
+    .card-section .card{
+        width: 100%;
+    }
+    .blog-card{
+        flex-direction: column;
+        width: 80%;
+    }
+    .img-row li img:hover{
+        transform: scale(2);
+    }
+    .form-control {
+        flex-direction: column;
+      }
+      input,
+      textarea {
+        max-width: 100%;
+      }
+      .form-control label {
+        margin-bottom: 0.5rem;
+      }
+      footer{
+        flex-direction: column;
+      }
+  }
+
+/* scren size responsive ends */
